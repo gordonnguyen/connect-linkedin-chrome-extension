@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "LinkedIn Connector",
+    "version": "1.0",
+    "description": "Automatically sends connection requests on LinkedIn.",
+    "permissions": ["scripting", "activeTab", "storage"],
+    "host_permissions": ["https://www.linkedin.com/*"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+      }
+    }
+  }
