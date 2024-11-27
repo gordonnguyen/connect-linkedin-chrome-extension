@@ -2,9 +2,7 @@
 const pollingInterval = 5000; // 5 seconds in milliseconds
 const maxPollingDuration = 30000; // 30 seconds in milliseconds
 
-
-
-// Function to click button based on text
+// Async function to click button based on text
 async function Button(text) {
   const startTime = Date.now(); // Record the start time
   console.log('button func');
@@ -20,23 +18,21 @@ async function Button(text) {
             const button = buttons[i];
             
             if (button.innerText.includes(text)) {
-              if(text == 'Connect') {button.click();}
-              //button.click();
+              //if(text == 'Connect') {button.click();}      // For debug
+              button.click();
               console.log(button);
               console.log('Clicked button', text);
               resolve(true)
-              clearInterval(clickButton);
-              return true;  // Exit the loop once the button is found
+              return;  // Exit the loop once the button is found
             }
           }
         };
 
-        // Return true if button is clicked
+        // Return if button is clicked
         if (isButtonFound()) {
-          return true;
+          //return;
         }
         console.log('Check not found');
-
 
         // Check polling
         const elapsedTime = Date.now() - startTime;
@@ -66,28 +62,18 @@ async function Button(text) {
   });
 }
 
+// Main program
+// to click "Connect" then "Send" buttons to complete
 (async () => {
     if (await Button('Connect')) {
       if(await Button('Send')) {
+        console.log('Operation succeeded');
         window.close()
       }
     }
-    console.log('Polling succeeded:', result);
+    else {
+      alert('Unable to complete!')
+    }
+    
 }
 )();
-
-/*
-// Connect profile and close window if finished
-if (clickButton('Connect')) {
-  console.log('1st button finished');
-  alert('in progress');
-  if(clickButton('Send')){
-    console.log('2nd button finished');
-    alert('finished');
-    //window.close()
-  };
-}
-else {
- console.log('error logic');
-};
-*/
