@@ -1,12 +1,12 @@
 # Connect LinkedIn Profiles Extension
 
-A chrome extension to connect profiles on LinkedIn by creating browsers tabs and automate the process.
+A Chrome extension to connect profiles on LinkedIn by creating browser tabs and automating the process.
 
 ## Getting Started
 
 ### Dependencies
 
-* Any chrominun based browser.
+* Any chromium-based browser.
 
 ### Installing
 
@@ -16,8 +16,8 @@ A chrome extension to connect profiles on LinkedIn by creating browsers tabs and
 
 ### Executing program
 
-* Choose text file containing LinkedIn profile links.
-* Click Start to run the program, page(s) will closed automatically after finished.
+* Choose a text file containing LinkedIn profile links.
+* Click Start to run the program, page(s) will close automatically after it is finished.
 
 
 ## Version History
