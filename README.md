@@ -2,12 +2,6 @@
 
 A chrome extension to connect profiles on LinkedIn by creating browsers tabs and automate the process.
 
-
-## Description
-
-An in-depth paragraph about your project and overview of use.
-
-
 ## Getting Started
 
 ### Dependencies
