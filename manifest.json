@@ -1,5 +1,6 @@
 {
     "manifest_version": 3,
+    "author": "Gordon Nguyen",
     "name": "LinkedIn Connector",
     "version": "1.0",
     "description": "Automatically sends connection requests on LinkedIn.",
