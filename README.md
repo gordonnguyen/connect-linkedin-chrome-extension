@@ -16,8 +16,9 @@ A Chrome extension to connect profiles on LinkedIn by creating browser tabs and 
 
 ### Executing program
 
-* Choose a text file containing LinkedIn profile links.
-* Click Start to run the program, page(s) will close automatically after it is finished.
+* Make sure you are logged in on LinkedIn.
+* Choose a text file containing LinkedIn profile links (Ex: `https://www.linkedin.com/in/aadarshsrivatsav/`).
+* Click Start to run the program, page(s) will close automatically after the profile is added.
 
 
 ## Version History
