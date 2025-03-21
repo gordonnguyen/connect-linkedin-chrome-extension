@@ -6,7 +6,7 @@ A Chrome extension to connect profiles on LinkedIn by creating browser tabs and 
 
 ### Dependencies
 
-* Any chromium-based browser.
+* Any chromium-based browser (e.g Chrome, Brave)
 
 ### Installing
 
